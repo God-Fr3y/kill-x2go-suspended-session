@@ -1,6 +1,6 @@
 # x2go-kill-suspended
 
-A production-grade Bash script for automatically cleaning up suspended X2Go sessions, ghost processes, and stale session database entries on multi-user Linux servers.
+A production-grade Bash script for automatically cleaning up suspended X2Go sessions, ghost processes, and stale session entries on multi-user Linux servers.
 
 ---
 
@@ -33,9 +33,10 @@ On busy X2Go servers, suspended sessions accumulate silently — consuming memor
 
 ## Installation
 
-### 1. Copy the script
+### 1. Clone and copy the script
 
 ```bash
+git clone https://github.com/God-Fr3y/kill-x2go-suspended-session.git && cd kill-x2go-suspended-session
 sudo cp x2go-kill-suspended.sh /usr/local/sbin/x2go-kill-suspended.sh
 sudo chmod 700 /usr/local/sbin/x2go-kill-suspended.sh
 sudo chown root:root /usr/local/sbin/x2go-kill-suspended.sh
